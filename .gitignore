@@ -6,5 +6,5 @@ __pycache__/*
 
 
 statistics/pictures
-exp_data/*
+# exp_data/*
 simulation_results/*
