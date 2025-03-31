@@ -10,15 +10,11 @@ Link to the original implementation of the paper: https://github.com/TSummersLab
 
 The instructions to install the conda environment and the relevant packages are provided in the original repo. They can be easily reproduced for any OS provided that Conda is already installed.  
 
-## Architecture
-We highlight the following files in `backend`:
-- `dynamic_vehicles.py`: defines classes for dynamic vehicles; i.e. vehicles with both geometry and a dynamics models
-- `dynamics.py`: defines classes for the vehicle dynamics
-- `geometry_vehicles.py`: defines classes for geometric vehicles
-- `ref_traj_generation.py`: defines classes to generate reference trajectories for the ego vehicle
-- `safe_halfspaces.py`: defines classes to obtain safe halfspaces
-- `safety_filters.py`: defines classes for MPC-based safety filters
-- `simulation_functions.py`: mostly includes plotting functions (and some to keep `drone_simulations.py` cleaner)
+## My Implementation
+I have created the 'my_backend' folder to start with my custom implementation of the paper. These are the files I have created and their purpose:
+- dynamics.py: Implements 2D double and single integrator models for ego and obstacle dynamics.
+- ref_traj_generation.py: Generates obstacle-free reference trajectories using MPC to reach goal states.
+- safety_filter.py: Implements an MPC-based safety filter that enforces DR-CVaR safe halfspace constraints.
 
 ## Running the Scripts
 The following scripts are useful for running the experiments:
