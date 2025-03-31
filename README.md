@@ -16,7 +16,7 @@ I have created the 'my_backend' folder to start with my custom implementation of
 - ref_traj_generation.py: Generates obstacle-free reference trajectories using MPC to reach goal states.
 - safety_filter.py: Implements an MPC-based safety filter that enforces DR-CVaR safe halfspace constraints.
 
-## Running the Scripts
+## Simulations and Experiments
 The following scripts are useful for running the experiments:
 - `drone_simulations.py`: runs the simulation
 - `experiment_setup.py`: setup for experiment scenarios (intersection, head-on, multi-obstacles, ...)
@@ -24,7 +24,7 @@ The following scripts are useful for running the experiments:
 - `paper_figures.py`: generates the halfspace comparison plots and the halfspace compute time plots
 
 
-### Running simulations and generating experiment data:
+### The changes I made:
 - To plot paper supporting figures (non-experiment figures), run `paper_figures.py`.
 - To set up a new type of experiment, edit the `experiment_setup.py` file
 - To run a single simulation, edit the setting of the `reach_avoid` function in `drone_simulations.py` and run the script
