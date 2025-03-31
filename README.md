@@ -1,25 +1,10 @@
-# DD-DR-CVaR Motion Planning
+# Distributionally Robust Conditional Value at Risk 
 
-This package contains code for solving a Data-Driven Distributionally-Robust CVaR-based Motion Planning problem.
-The package uses CVXPy to model and solve the problem.
+This repository has been forked from the original implementation of the ICRA 2024 research paper titled "Distributionally Robust CVaR-Based Safety Filtering for Motion Planning in Uncertain Environments." The goal is to create a custom implementation and compare it's results against the official implementation. 
 
 ## Installation
 
-- Download/Clone the package
-- (Optional) Create a conda environment by running the following in terminal:
-    ```
-    conda create --name dr_cvar_safety_filtering python=3.10 pip -y
-    conda activate dr_cvar_safety_filtering
-    ```
-- Install dependencies by running the following in terminal:
-    ```
-    pip install numpy==1.23.5 
-    pip install scipy==1.9.3 
-    pip install matplotlib==3.6.1
-    pip install cvxpy==1.2.1
-    pip install polytope==0.2.3
-    pip install colorama==0.4.6
-    ```
+The instructions to install the conda environment and the relevant packages are provided in the original repo. It can be easily reproduced in any Linux Ubuntu system. 
 
 ## Architecture
 We highlight the following files in `backend`:
