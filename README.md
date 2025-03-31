@@ -26,4 +26,5 @@ Once the Conda environment is activated we can run the following command to exec
 ```
 python drone_simulations.py
 ```
+The experimental data is saved to the exp_data folder. The 12 experimental scenarios in drone_simulations.py combine 4 ego-obstacle interaction types—**intersection**, **head-on**, **overtaking**, and **multi-obstacle**—each tested with 3 risk metrics: **mean**, **CVaR**, and **DR-CVaR**. These scenarios evaluate how each safety filter performs under different risk-awareness assumptions. The goal is to assess safety and performance across varying uncertainty levels and collision likelihoods.
 
