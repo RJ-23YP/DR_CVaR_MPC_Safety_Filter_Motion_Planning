@@ -210,6 +210,10 @@ def reach_avoid(seed, exp_type, metric, filter_slack, samp_dist='norm', realize_
 
 
 def main():
+
+    ### Experiments added for all 4 cases of obstacle and ego vehicle trajectories
+    ### The risk metrics to be used are also varied between drcvar, cvar, and mean value. 
+
     reach_avoid(seed=2023, exp_type='ego_and_3_vehicles', metric='drcvar', filter_slack=False,
                 samp_dist='norm', realize_dist='lap',
                 show_traj=True, show_col_dist=True, show_cvxpy_data=True,
