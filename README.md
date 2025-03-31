@@ -1,6 +1,10 @@
 # Distributionally Robust Conditional Value at Risk 
 
-This repository has been forked from the original implementation (https://github.com/TSummersLab/dr-cvar-safety_filtering) of the ICRA 2024 research paper titled "Distributionally Robust CVaR-Based Safety Filtering for Motion Planning in Uncertain Environments." The goal is to create a custom implementation and compare it's results against the official implementation. 
+This repository has been forked from the original implementation of the ICRA 2024 research paper titled "Distributionally Robust CVaR-Based Safety Filtering for Motion Planning in Uncertain Environments." The goal is to create a custom implementation and compare it's results against the official implementation. 
+
+Link to the Paper: https://arxiv.org/pdf/2309.08821
+
+Link to the original implementation of the Paper: https://github.com/TSummersLab/dr-cvar-safety_filtering
 
 ## Installation
 
