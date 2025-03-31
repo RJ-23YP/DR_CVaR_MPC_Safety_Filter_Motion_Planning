@@ -17,18 +17,11 @@ I have created the 'my_backend' folder to start with my custom implementation of
 - safety_filter.py: Implements an MPC-based safety filter that enforces DR-CVaR safe halfspace constraints.
 
 ## Simulations and Experiments
-The following scripts are useful for running the experiments:
-- `drone_simulations.py`: runs the simulation
-- `experiment_setup.py`: setup for experiment scenarios (intersection, head-on, multi-obstacles, ...)
-- `multi_exp_sim.py`: runs Monte Carlo simulations and plots the results
-- `paper_figures.py`: generates the halfspace comparison plots and the halfspace compute time plots
+I have used the following scripts to run some experiments to get an idea of the expected results:
+- drone_simulations.py: Runs full 2D drone simulation experiments with DR-CVaR-based MPC safety filtering and plotting.
+- experiment_setup.py: Defines multiple dynamic motion planning scenarios and sets up experiment configurations for ego and obstacle vehicles.
 
+Once the Conda environment is activated we can run the following command to execute the experiments:
 
-### The changes I made:
-- To plot paper supporting figures (non-experiment figures), run `paper_figures.py`.
-- To set up a new type of experiment, edit the `experiment_setup.py` file
-- To run a single simulation, edit the setting of the `reach_avoid` function in `drone_simulations.py` and run the script
-- To run Monte carlo simulations, edit the toggles and ranges at the top of `multi_exp_sim.py` and run the script
-- To plot experiment data
-  - For single experiments, set the plotting variables in `drone_simulations.py` to `True`
-  - For multiple experiments, set the plotting variable in `multi_exp_sim.py` to `True`
+``python drone_simulations.py``
+
