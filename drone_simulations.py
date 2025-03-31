@@ -215,6 +215,24 @@ def main():
                 show_traj=True, show_col_dist=True, show_cvxpy_data=True,
                 plot_traj=True, plot_col_dist=True, plot_cvxpy_data=True,
                 xlim=(-5, 5), ylim=(-3, 4), figsize=None)
+    
+    reach_avoid(seed=2023, exp_type='ego_overtaking', metric='drcvar', filter_slack=False,
+                samp_dist='norm', realize_dist='lap',
+                show_traj=True, show_col_dist=True, show_cvxpy_data=True,
+                plot_traj=True, plot_col_dist=True, plot_cvxpy_data=True,
+                xlim=(-5, 5), ylim=(-3, 4), figsize=None)
+    
+    reach_avoid(seed=2023, exp_type='ego_headon', metric='drcvar', filter_slack=False,
+                samp_dist='norm', realize_dist='lap',
+                show_traj=True, show_col_dist=True, show_cvxpy_data=True,
+                plot_traj=True, plot_col_dist=True, plot_cvxpy_data=True,
+                xlim=(-5, 5), ylim=(-3, 4), figsize=None)
+    
+    reach_avoid(seed=2023, exp_type='ego_intersect', metric='drcvar', filter_slack=False,
+                samp_dist='norm', realize_dist='lap',
+                show_traj=True, show_col_dist=True, show_cvxpy_data=True,
+                plot_traj=True, plot_col_dist=True, plot_cvxpy_data=True,
+                xlim=(-5, 5), ylim=(-3, 4), figsize=None)
 
 
 if __name__ == "__main__":
